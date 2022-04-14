@@ -18,7 +18,7 @@ https://ru.vuejs.org/v2/cookbook/dockerize-vuejs-app.html
 
 	docker stop <container_id>
 
-	docker exec -it <container_id /bin/bash
+	docker exec -it <container_id> /bin/bash
 
 
 	docker images
