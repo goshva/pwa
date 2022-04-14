@@ -9,7 +9,7 @@ const path = require('path')
 export default defineConfig({
   server: {
     port: 8080,
-    host: false
+    host: true
   },
   plugins: [
     vue(),
