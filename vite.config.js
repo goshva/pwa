@@ -8,7 +8,7 @@ const path = require('path')
 
 export default defineConfig({
   server: {
-    port: 3000,
+    port: 8080,
     host: false
   },
   plugins: [
