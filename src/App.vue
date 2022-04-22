@@ -47,6 +47,13 @@
   </v-app-bar>
   <v-main>
     <v-container fluid>
+      <div align="center" justify="center" style="margin-top: 20vh;" v-if="!login">
+        <v-form style="max-width: 400px;">
+          <v-text-field label="Name"></v-text-field>
+          <v-text-field label="Password" type="password"></v-text-field>
+          <v-btn>Login</v-btn>
+        </v-form>
+      </div>
       <v-row dense v-if="login">
         <v-col
           v-for="item in items"
@@ -59,6 +66,7 @@
             <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
             <v-card-actions>
               <v-btn color="secondary" rounded="pill" variant="contained-text">Explore</v-btn>
+              <v-btn color="red" rounded="pill" variant="contained-text" v-if="admin">Edit</v-btn>
               <v-spacer></v-spacer>
               <v-btn :icon="show[item.id] ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="show[item.id] = !show[item.id]"></v-btn>
             </v-card-actions>

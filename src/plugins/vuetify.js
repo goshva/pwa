@@ -16,8 +16,8 @@ export default createVuetify({
           surface: '#ffffff',
           primary: '#263238',
           secondary: '#4f5b62',
-          accent: '#FFFFFF',
-          error: '#FFFFFF'
+          accent: '#7e57c2',
+          error: '#ff8a80'
         }
       }
     },
