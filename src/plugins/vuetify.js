@@ -8,14 +8,14 @@ import { createVuetify } from 'vuetify'
 
 export default createVuetify({
   theme: {
-    defaultTheme: 'dark',
+    defaultTheme: 'light',
     themes: {
-      dark: {
+      light: {
         colors: {
-          background: '#110030',
-          surface: '#3e007a',
-          primary: '#ac5de7',
-          secondary: '#1c9eea',
+          background: '#d7ccc8',
+          surface: '#ffffff',
+          primary: '#263238',
+          secondary: '#4f5b62',
           accent: '#FFFFFF',
           error: '#FFFFFF'
         }
